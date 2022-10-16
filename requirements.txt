@@ -1,0 +1,10 @@
+pytube
+youtube_transcript_api
+flask-restful
+pytesseract
+apiclient
+google-api-python-client
+unidecode
+pandas
+jellyfish
+nltk
