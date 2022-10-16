@@ -316,7 +316,7 @@ def key_words(x,max_Result):
         #youtube_response_df.at[i, "video_text"]= get_frames(youtube_response_df.at[i, "URL"],3,100)   # video
     youtube_response_df.sort_values(by=['relative_score'], ascending=False)
     print("we sorted the data ..... ")
-    return youtube_response_df[:50]
+    return youtube_response_df[:50].to_dict()
 
 
 from flask import Flask, jsonify, request
