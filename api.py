@@ -333,7 +333,43 @@ def disp(tags):
     user_query=tags.replace('_',' ')
     return key_words(user_query,200)
   
-  
+@app.route("/")
+def hello_world():
+    return '''<p>Hello, you are in youtube search improvement api service !</p>
+    <h1>
+    # Youtube_API
+    </h1>
+    <p>
+The  API for getting information about any topic from youtube.
+</br>
+This API is build on flask 
+</br>
+We are using YouTube V3 api services to build our API
+</br>
+To run this service you have to </br>
+1. clone this repository</br>
+2. create a virtual environment</br>
+      virtualenv ~environment-name~</br>
+3. start environment</br>
+        ~environment-name~\Scripts\activate</br>
+4.install reqired libraries</br>
+        pip install -m requirements.txt</br>
+5. paste you google developer api where YT_API is required</br>
+6. run the code </br>
+        python api.py</br>
+7. now you will able to get top50 youtube videos according to your need.</br>
+
+</br>
+to use api service on localhost use </br>
+
+url ----->   "http://127.0.0.1:5000/tags/user_query_words_seperated_by_underscroll"
+</br>
+this will return most of the required informations .</br>
+
+This is just simple python,</br>
+You can modify this according to your need......</br>
+    </p>'''
+
 # driver function
 if __name__ == '__main__':
   
